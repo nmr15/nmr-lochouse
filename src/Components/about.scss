@@ -1,0 +1,55 @@
+.about
+{
+  display: flex;
+  flex-direction: row;
+
+  &__left
+  {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 0.5rem;
+
+    &-h1
+    {
+      font-weight: 600;
+      font-size: 5.2rem;
+      line-height: 7.1rem;
+    }
+
+    &-p
+    {
+      width: 50rem;
+      margin-top: 1.5rem;
+      font-weight: 400;
+      font-size: 2.5rem;
+      line-height: 3.4rem;
+    }
+
+    & a
+    {
+      margin-top: 1.5rem;
+    }
+  }
+
+  &__right
+  {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-img
+    {
+      width: 80%;
+      height: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+
+}
