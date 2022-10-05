@@ -1,0 +1,93 @@
+.footer
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 5rem 5rem 7rem 5rem;
+  background-color: #000000;
+  color: #ffffff;
+
+  &__contact-bottom, &__subsribe-bottom
+  {
+    margin-top: 2rem;
+  }
+
+  &__h3
+  {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+  }
+
+  &__content
+  {
+    margin-top: 1.5rem;
+  }
+
+  &__links
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__p, &__a
+  {
+    font-size: 1.4rem;
+  }
+
+  &__p:not(:first-child), &__a:not(:first-child)
+  {
+    margin-top: 1rem;
+  }
+
+  &__input
+  {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-bottom: 1px solid #7F8C8D;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1.6rem;
+
+    &:focus
+    {
+      outline: none;
+    }
+  }
+
+  &__i
+  {
+    margin-right: 2rem;
+    font-size: 1.4rem;
+  }
+  
+}
+
+@media screen and (max-width: 768px)
+{
+  .footer
+  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &__link, &__subscribe
+    {
+      margin-top: 2.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 480px)
+{
+  .footer
+  {
+    display: flex;
+    flex-direction: column;
+
+    &__services, &__link, &__subscribe
+    {
+      margin-top: 2rem;
+    }
+  }
+}
