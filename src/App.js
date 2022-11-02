@@ -6,18 +6,27 @@ import Ourwork from './Components/Ourwork';
 import Team from './Components/Team';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
+import Carousel, { CarouselItem } from './Components/Carousel';
+import BootstrapCarousel from './Components/BootstrapCarousel';
 
 function App() {
   return (
     <div className="App">
-      
-      <Navbar />
-      <About />
-      {/* <Service />
-      <Ourwork />
-      <Team />
-      <Contact />
-      <Footer /> */}
+      <nav>
+        <Navbar />
+      </nav>  
+      <main>
+        <About />
+        <Service />
+        {/* <Ourwork /> */}
+        <Carousel />
+        {/* <BootstrapCarousel /> */}
+        <Contact />
+        <Team />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
