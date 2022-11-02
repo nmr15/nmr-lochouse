@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 3rem;
 
   &__content
   {
@@ -50,13 +51,19 @@
     align-items: center;
     text-align: center;
 
+    &-container
+    {
+      margin: 0 auto;
+      width: 15.5rem;
+      height: 19.2rem;
+      border: none;
+    }
+
     &-img
     {
-      width: 17rem;
-      height: 17rem;
-      border: none;
-      border-radius: 50%;
-      background-color: #000;
+      width: 100%;
+      height: 100%;
+      // border-radius: 50%;
     }
 
     &-name
@@ -126,6 +133,11 @@
   .team__image
   {
     flex-wrap: wrap;
+
+    &-3
+    {
+      margin-top: 3rem;
+    }
   }
 }
 

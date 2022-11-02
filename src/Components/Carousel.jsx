@@ -66,13 +66,14 @@ const Carousel = () => {
             );
           })}
         </div>
-        <div className="carousel__arrow">
-          {/* <button className="prev" onClick={() => setIndex(index - 1)}> */}
-            <i class="fas fa-chevron-left carousel__arrow-left" onClick={() => setIndex(index - 1)}></i>
-          {/* </button> */}
-          {/* <button className="next" onClick={() => setIndex(index + 1)}> */}
-            <i class="fas fa-chevron-right carousel__arrow-right" onClick={() => setIndex(index + 1)}></i>
-          {/* </button> */}
+        <div className="carousel__indicators">
+          <i class="fas fa-chevron-left carousel__arrow-left" onClick={() => setIndex(index - 1)}></i>
+          <div className="carousel__dots">
+            <span className="carousel__dot" onClick={() => setIndex(1)}></span>
+            <span className="carousel__dot" onClick={() => setIndex(2)}></span>
+            <span className="carousel__dot" onClick={() => setIndex(3)}></span>
+          </div>
+          <i class="fas fa-chevron-right carousel__arrow-right" onClick={() => setIndex(index + 1)}></i>
         </div>
       </section>
       
